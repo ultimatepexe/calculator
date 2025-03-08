@@ -1,6 +1,7 @@
 html {
     display: flex;
     justify-content: center;
+    align-items: center;
     font-family: sans-serif;
 }
 
@@ -38,6 +39,7 @@ main {
     text-align: right;
     padding: 10px;
     font-size: 50px;
+    border-radius: 5px;
 }
 
 #resultButton {
