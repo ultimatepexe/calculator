@@ -1,0 +1,53 @@
+html {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(5, 100px);
+    grid-template-areas: 
+    "resultScreen resultScreen resultScreen resultScreen"
+    "percentage division multiplication delete"
+    "seven eight nine subtraction"
+    "four five six addition"
+    "one two three resultButton"
+    "clear zero dot resultButton";
+    gap: 3px;
+
+    background-color: rgb(50, 50, 50);
+    border-radius: 10px;
+    padding: 15px;
+
+    width: 410px;
+    height: 615px;
+}
+
+#resultScreen {
+    background-color: rgb(20, 20, 20);
+    grid-column-start: span 4;
+
+    margin-bottom: 5px;
+    text-align: right;
+    padding: 10px;
+    font-size: 50px;
+}
+
+#resultButton {
+    grid-row-start: span 2;
+}
+
+button {
+    background-color: rgb(70, 70, 70);
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border-radius: 5px;
+}

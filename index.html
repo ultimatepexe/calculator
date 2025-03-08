@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css" media="all">
+</head>
+<body>
+    <main>
+        <div id="resultScreen">
+            0
+        </div>
+        <button id="percentage" onclick="setOperator('%')">
+            <i class="fa-solid fa-percent"></i>
+        </button>
+        <button id="division" onclick="setOperator('/')">
+            <i class="fa-solid fa-divide"></i>
+        </button>
+        <button id="multiplication" onclick="setOperator('*')">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <button id="delete" onclick="del()">
+            <i class="fa-solid fa-delete-left"></i>
+        </button>
+        <button id="seven" onclick="addNumber(7)">
+            7
+        </button>
+        <button id="eight" onclick="addNumber(8)">
+            8
+        </button>
+        <button id="nine" onclick="addNumber(9)">
+            9
+        </button>
+        <button id="subtraction" onclick="setOperator('-')">
+            <i class="fa-solid fa-minus"></i>
+        </button>
+        <button id="four" onclick="addNumber(4)">
+            4
+        </button>
+        <button id="five" onclick="addNumber(5)">
+            5
+        </button>
+        <button id="six" onclick="addNumber(6)">
+            6
+        </button>
+        <button id="addition" onclick="setOperator('+')">
+            <i class="fa-solid fa-plus"></i>
+        </button>
+        <button id="one" onclick="addNumber(1)">
+            1
+        </button>
+        <button id="two" onclick="addNumber(2)">
+            2
+        </button>
+        <button id="three" onclick="addNumber(3)">
+            3
+        </button>
+        <button id="resultButton" onclick="calc()">
+            <i class="fa-solid fa-equals"></i>
+        </button>
+        <button id="clear" onclick="clear()">
+            C
+        </button>
+        <button id="zero" onclick="addNumber(0)">
+            0
+        </button>
+        <button id="dot" onclick="addDot()">
+            .
+        </button>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
