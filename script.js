@@ -60,7 +60,6 @@ function setOperator(op) {
             default:
                 break
         }
-
         show()
     }
 }

@@ -12,7 +12,7 @@ body {
 
 main {
     display: grid;
-    grid-template-columns: repeat(4, 100px);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 100px);
     grid-template-areas: 
     "resultScreen resultScreen resultScreen resultScreen"
@@ -54,4 +54,10 @@ button {
     font-weight: bold;
     font-size: large;
     border-radius: 5px;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 350px;
+    }
 }
