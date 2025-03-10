@@ -34,6 +34,7 @@ main {
 #resultScreen {
     background-color: rgb(20, 20, 20);
     grid-column-start: span 4;
+    grid-area: resultScreen;
 
     margin-bottom: 5px;
     text-align: right;
@@ -44,6 +45,7 @@ main {
 
 #resultButton {
     grid-row-start: span 2;
+    grid-area: resultButton;
 }
 
 button {
