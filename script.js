@@ -65,7 +65,7 @@ function setOperator(op) {
     }
 }
 
-function del(op) {
+function del() {
     if (operator === "operator") {
         if (n1.endsWith(".")) {
             dot = false
