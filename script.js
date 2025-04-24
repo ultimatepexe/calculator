@@ -128,3 +128,45 @@ function calc() {
     operator = "operator"
     show()
 }
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "1") {
+        addNumber(1)
+    } else if (event.key === "2") {
+        addNumber(2)
+    } else if (event.key === "3") {
+        addNumber(3)
+    } else if (event.key === "4") {
+        addNumber(4)
+    } else if (event.key === "5") {
+        addNumber(5)
+    } else if (event.key === "6") {
+        addNumber(6)
+    } else if (event.key === "7") {
+        addNumber(7)
+    } else if (event.key === "8") {
+        addNumber(8)
+    } else if (event.key === "9") {
+        addNumber(9)
+    } else if (event.key === "0") {
+        addNumber(0)
+    } else if (event.key === ".") {
+        addDot()
+    } else if (event.key === "+") {
+        setOperator("+")
+    } else if (event.key === "-") {
+        setOperator("-")
+    } else if (event.key === "*") {
+        setOperator("*")
+    } else if (event.key === "/") {
+        setOperator("/")
+    } else if (event.key === "=" || event.key === "Enter") {
+        calc()
+    } else if (event.key === "Backspace") {
+        del()
+    } else if (event.key === "c" || event.key === "C") {
+        clearAll()
+    } else if (event.key === "%") {
+        setOperator("%")
+    }
+})
