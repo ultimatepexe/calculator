@@ -1,0 +1,105 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(45deg, rgb(0, 60, 255), rgb(6, 93, 255), rgb(15, 127, 255), rgb(39, 169, 255), rgb(55, 215, 255), rgb(103, 225, 255));
+  padding: 10px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 3px;
+  max-width: 600px;
+  width: 97vw;
+
+  background-color: #EeEeEe;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 0.95;
+}
+
+.div {
+  grid-column: span 4;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  row-gap: 5px;
+  padding: 3px;
+  border-bottom: solid lightskyblue 1px;
+  margin-bottom: 3px;
+  text-wrap: wrap;
+  word-break: break-all;
+}
+
+div > h1 {
+  background: linear-gradient(to right, #1E3A8A, #3B82F6, #60A5FA);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-size: 1.5em;
+}
+
+div > h1 > span {
+  font-size: 0.5em;
+}
+
+div > output#currentOperand {
+  grid-column: span 2;
+  font-size: 1.8em;
+  color: #111111;
+  text-align: right;
+}
+
+div > div#previousOperand {
+  color: gray;
+  text-align: right;
+}
+
+button > span {
+  font-weight: normal;
+}
+
+button {
+  min-height: 50px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(230, 230, 230);
+  cursor: pointer;
+  font-size: 100%;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+button:active {
+  background-color: rgb(210, 210, 210);
+}
+
+button#equalButton {
+  background-color: rgb(135, 206, 250);
+}
+
+button#equalButton:hover {
+  background-color: rgb(115, 186, 240);
+}
+
+button#equalButton:active {
+  background-color: rgb(95, 166, 230);
+}
