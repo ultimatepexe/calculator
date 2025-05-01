@@ -38,16 +38,19 @@ function App() {
   }
 
   function chooseOperation(op: string): void {
-    if (op === "%") return;
+    if (op === "%") {
+      if (previousOperand) {
+        return setCurrentOperand(((Number(currentOperand)) * Number(previousOperand) / 100).toString());
+      }
+    } else {
+      if (["√", "²", "!"].includes(op)) {
+        return setOperation(op);
+      }
     
-    if (["√", "²", "!"].includes(op)) {
+      if (!previousOperand) setPreviousOperand(currentOperand);
       setOperation(op);
-      return;
+      setCurrentOperand("0");
     }
-  
-    if (!previousOperand) setPreviousOperand(currentOperand);
-    setOperation(op);
-    setCurrentOperand("0");
   }
 
   function factorial(n: number): number {
