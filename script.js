@@ -37,6 +37,12 @@ function addDot() {
 }
 
 function setOperator(op) {
+    if (operator && n2.length > 0) {
+        calc()
+        setOperator(op)
+        show()
+    }
+
     if (operator === "operator" && numbers.length > 0) {
         operator = op
         dot = false
