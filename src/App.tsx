@@ -98,7 +98,7 @@ function App() {
       <main>
           <div className='div'>
               <h1>
-                  CalculatorTS<span>.pexe.dev</span>
+                  Calculator<span>.pexe.dev</span>
               </h1>
               <div id="previousOperand">
                   <output>
